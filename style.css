@@ -133,6 +133,9 @@ nav ul li span:nth-child(4) {
   --n: 4;
 }
 
+.photo {
+  text-align: left;
+}
 .question {
   background: #75e0e0;
   padding: 0.5em;

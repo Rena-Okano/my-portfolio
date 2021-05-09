@@ -1,3 +1,19 @@
+var pics_src = new Array(
+  "images/dalacrare.jpg",
+  "images/S__7077890.jpg",
+  "images/craregreen.jpg"
+);
+var num = 0;
+
+function slideshow() {
+  if (num == 2) {
+    num = 0;
+  } else {
+    num++;
+  }
+  document.getElementById("images").src = pics_src[num];
+}
+
 //問題と解答
 qa = new Array();
 qa[0] = ["私の学校は", "慶應", "早稲田", "立教", 1];
