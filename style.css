@@ -1,0 +1,141 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  background-color: #62cbfc;
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 2;
+}
+
+#name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f7f5;
+  padding: 5rem;
+}
+
+.cp_h1title {
+  display: flex;
+  overflow: hidden;
+  background: #75e0e0;
+  padding: 0.5em;
+  align-items: center;
+  color: #ffffff;
+  font-family: "Arial Black";
+  font-size: 40px;
+}
+.cp_h1title:before,
+.cp_h1title:after {
+  content: "";
+  flex: 1;
+  background: #fff;
+  padding: 1px 0;
+  height: 0;
+  transform: rotate(45deg);
+}
+
+/*.cp_h1title {
+  position: relative;
+  padding: 0.5em;
+  font-family: "Arial Black";
+  font-size: 40px;
+  text-align: center;
+  color: #f4f7fa;
+}
+.cp_h1title::before,
+.cp_h1title::after {
+  position: absolute;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 12px;
+  box-sizing: border-box;
+}
+.cp_h1title::before {
+  top: 0;
+  border-top: 2px solid #c4defc;
+  border-bottom: 1px solid #c4defc;
+}
+.cp_h1title::after {
+  bottom: 0;
+  border-top: 1px solid #c4defc;
+  border-bottom: 2px solid #c4defc;
+}
+*/
+
+nav ul {
+  list-style: none;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  --c: rgb(251, 253, 253);
+  color: var(--c);
+  font-size: 16px;
+  border: 0.3em solid var(--c);
+  border-radius: 0.5em;
+  width: 12em;
+  height: 3em;
+  float: left;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: sans-serif;
+  letter-spacing: 0.1em;
+  text-align: center;
+  line-height: 3em;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.5s;
+  margin: 7.1em;
+}
+
+nav ul li span {
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  background-color: var(--c);
+  transform: translateY(150%);
+  border-radius: 50%;
+  left: calc((var(--n) - 1) * 25%);
+  transition: 0.5s;
+  transition-delay: calc((var(--n) - 1) * 0.1s);
+  z-index: -1;
+}
+
+nav ul li:hover {
+  color: black;
+}
+
+nav ul li:hover span {
+  transform: translateY(0) scale(2);
+}
+
+nav ul li span:nth-child(1) {
+  --n: 1;
+}
+
+nav ul li span:nth-child(2) {
+  --n: 2;
+}
+
+nav ul li span:nth-child(3) {
+  --n: 3;
+}
+
+nav ul li span:nth-child(4) {
+  --n: 4;
+}
+
+.question {
+  background: #75e0e0;
+  padding: 0.5em;
+  text-align: center;
+  color: #ffffff;
+}
